@@ -22,7 +22,7 @@ body, html {
     padding: 8px;
   }
   table{
-    width: 35%;
+    width: 30%;
   }
   .truth_table {
 
@@ -30,7 +30,7 @@ body, html {
     border-collapse: collapse;
     margin-left: 10px;
     position: absolute;
-    right: 20%;
+    right: 27%;
   }
 
 
@@ -86,9 +86,9 @@ body, html {
 
   
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     .container {
-      position: absolute;
+      position: static;
       left: 10px;
       margin: 30px;
       max-width: 250px;
@@ -121,7 +121,7 @@ body, html {
       width: 50%;
       right: 5%;
       top: 1%;
-      position:-webkit-sticky;
+      position:absolute;
     }
     .diagram{
       max-width: 450px;
