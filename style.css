@@ -13,7 +13,7 @@ body, html {
     width: 35%;
     height: auto;
     margin: 40px;
-    margin-left: 70px;
+    margin-left: 30px;
     margin-top: 50px;
   }
   td, th {
@@ -22,23 +22,22 @@ body, html {
     padding: 8px;
   }
   table{
-    width: 30%;
+    width: 25%;
   }
   .truth_table {
-
     margin-top: 81px;
     border-collapse: collapse;
     margin-left: 10px;
     position: absolute;
-    right: 27%;
+    right: 30%;
   }
 
 
   /* Add styles to the form container */
   .container {
     position: absolute;
-    right: 40px;
-    margin: 30px;
+    right: 0px;
+    margin: 20px;
     max-width: 200px;
 
   }
@@ -86,15 +85,13 @@ body, html {
 
   
   
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 800px) {
     .container {
       position: static;
       left: 10px;
       margin: 30px;
       max-width: 250px;
       width: 30%;
-      padding: px;
-
     }
   
     input[type=text], input[type=password] {
