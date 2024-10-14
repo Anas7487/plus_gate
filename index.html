@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-img">
+    <center>
+      <div class="table_div">
+        <table class="truth_table" id="truth_table">
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>S</th>
+            <th>Cin</th>
+            <th>Cout</th>
+        </table>
+        <table class="truth_table ">
+        </table>
+      </div>
+    </center>
+    <form class="container">
+      <label><b>enter number A</b></label>
+      <input id="num1" class="display inputable" type="text" placeholder="Enter number 1" required>
+      <label><b>enter number B</b></label>
+      <input id="num2" class="display inputable" type="text" placeholder="Enter number 2" required>
+      <button type="button" id="process-btn" class="btn" onclick="process()">Process</button>
+      <label><b>Binary of A</b></label>
+      <input id="bit1" class="display" type="text" placeholder="Bit display of number 1" readonly>
+      <label><b>Binary of B</b></label>
+      <input id="bit2" class="display" type="text" placeholder="Bit display of number 2" readonly>
+      <label><b>Output</b></label>
+      <input id="output_bit" class="display" type="text" placeholder="Output_bit" readonly>
+      <label><b>Output</b></label>
+      <input id="output_number" class="display" type="text" placeholder="Output_number" readonly>
+    </form>
+
+    <svg id="A" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="94.5" cy="157.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94.5" cy="296.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94.5" cy="617.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+
+    <svg id="B" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="94.5" cy="435.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94.5" cy="224.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94.5" cy="684.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="Cin" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="94.5" cy="363.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94.5" cy="502.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94.5" cy="766.5" r="25" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="94" cy="39" r="37.5" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="359.5" cy="704.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="S" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="577.5" cy="674.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="and_one" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="352.5" cy="178.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="and_two" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="352.5" cy="242.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="and_tree" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="552.5" cy="273.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="or" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="552.5" cy="213.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="xor" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="359.5" cy="651.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <svg id="Cout" class="diagram" width="760" height="793" viewBox="0 0 760 793" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="733.5" cy="242.5" r="25" fill="white" stroke="black" stroke-width="3" />
+    </svg>
+    <img class="diagram" src="canvas/diagram.svg">
+
+  </div>
+  <script src="function.js"></script>
+  <script src="red.js"></script>
+  <script src="process.js"></script>
+</body>
+
+</html>
